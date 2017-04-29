@@ -4,7 +4,7 @@ var path = require("path");
 
 var newApp = express();
 
-var port = process.env.port || 8030;
+var port = process.env.PORT || 8030;
 
 newApp.use(express.static(__dirname));
 newApp.use(bodyParser.urlencoded({ extended: false }));
