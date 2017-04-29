@@ -13,8 +13,8 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron">
-            <img class="img-rounded img-responsive" id="modalImg" src="../public/assets/img/walkingdead.png" width="100%">
-            <h3>Time to build friendships</h3>
+            <img class="img-rounded img-responsive" src="http://my59.tv/my59_wp/wp-content/uploads/2014/05/walkingdead_logo.png" width="100%">
+            <h3 class="text-center">Time to build friendships</h3>
             <hr>
         </div>
         <div class="container">
@@ -177,7 +177,6 @@
         <div class="modal fade" role="dialog" tabindex="-1" id="required">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-
                     <div class="modal-body">
                         <p class="text-center">Please complete the required fields</p>
                     </div>
@@ -194,13 +193,13 @@
             if ($('#name').val() === '' || $('#photo').val() === '') {
                 $("#required").modal('toggle');
             } else {
-                
+
                 var userData = {
-                        name: $("#name").val(),
-                        photo: $("#photo").val(),
-                        scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
-                    }
-                   
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
+                }
+
                 var currentURL = window.location.origin;
                 $.post(currentURL + "/api/new-wdfriends", userData, function(data) {
                     $("#modalHeader").text("Your new best friend is " + data.name + "!");
@@ -223,7 +222,7 @@
         });
         </script>
         <footer class="text-center">
-             <p class="text-muted">Copyright &copy; 2017 Saul Arevalo</p>
+            <p class="text-muted">Copyright &copy; 2017 Saul Arevalo</p>
         </footer>
     </div>
 </body>
