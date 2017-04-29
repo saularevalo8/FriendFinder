@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Walking Dead and Friends</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/cyborg/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <img class="img-rounded img-responsive" id="modalImg" src="../public/assets/img/walkingdead.png" width="100%">
+            <h3>Time to build friendships</h3>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <h2>About You</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="control-label">Name (required)</label>
+                            <input class="form-control" type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Photo Link</label>
+                            <input class="form-control" type="text" id="photo" required>
+                        </div>
+                    </form>
+                    <hr>
+                    <h2>Question 1:</h2>
+                    <h3>I hate Walkers!</h3>
+                    <select class="selectpicker" id="question1">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 2:</h2>
+                    <h3>You are hopeful for a better future.</h3>
+                    <select class="selectpicker" id="question2">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 3:</h2>
+                    <h3>I deal well with Rivals.</h3>
+                    <select class="selectpicker" id="question3">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 4:</h2>
+                    <h3>I feel positive about life.</h3>
+                    <select class="selectpicker" id="question4">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 5:</h2>
+                    <h3>I know how to defend yourself and kill walkers.</h3>
+                    <select class="selectpicker" id="question5">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 6:</h2>
+                    <h3>I would kill to steal from others.</h3>
+                    <select class="selectpicker" id="question6">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 7:</h2>
+                    <h3>I know how to shoot</h3>
+                    <select class="selectpicker" id="question7">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 8:</h2>
+                    <h3>I haven't enjoyed my life since the beginning of the walkers</h3>
+                    <select class="selectpicker" id="question8">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 9:</h2>
+                    <h3>I like children.</h3>
+                    <select class="selectpicker" id="question9">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <hr>
+                    <h2>Question 10:</h2>
+                    <h3>I enjoy the Neegan clan.</h3>
+                    <select class="selectpicker" id="question10">
+                        <optgroup label="Select Option">
+                            <option value="1">1 (Strongly Agree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Disagree)</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <button class="btn btn-warning btn-block btn-lg home-link" type="submit" id="submitSurvey">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="resultsModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="text-center modal-title" id="modalHeader"></h4>
+                    </div>
+                    <div class="modal-body"><img class="img-rounded img-responsive" id="modalImg" src="" width="100%">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="required">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+</div> -->
+                    <div class="modal-body">
+                        <p class="text-center">Please complete the required fields</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $('#submitSurvey').on("click", function() {
+            if ($('#name').val() === '' || $('#photo').val() === '') {
+                $("#required").modal('toggle');
+            } else {
+                // create new object from user input
+                var userData = {
+                        name: $("#name").val(),
+                        photo: $("#photo").val(),
+                        scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
+                    }
+                    // pull the origin of where user is right now
+                var currentURL = window.location.origin;
+                // AJAX post the data to the friends API.
+                $.post(currentURL + "/api/new-wdfriends", userData, function(data) {
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#modalHeader").text("Your new best friend is " + data.name + "!");
+                    $('#modalImg').attr("src", data.photo);
+                    // Show the modal with the best match
+                    $("#resultsModal").modal('toggle');
+                    // reset survey values
+                    $("#name").val("");
+                    $("#photo").val("");
+                    $('#question1').prop('selectedIndex', 0);
+                    $('#question2').prop('selectedIndex', 0);
+                    $('#question3').prop('selectedIndex', 0);
+                    $('#question4').prop('selectedIndex', 0);
+                    $('#question5').prop('selectedIndex', 0);
+                    $('#question6').prop('selectedIndex', 0);
+                    $('#question7').prop('selectedIndex', 0);
+                    $('#question8').prop('selectedIndex', 0);
+                    $('#question9').prop('selectedIndex', 0);
+                    $('#question10').prop('selectedIndex', 0);
+                });
+            }
+        });
+        </script>
+        <footer class="navbar-fixed-bottom text-center">
+        </footer>
+    </div>
+</body>
+
+</html>
