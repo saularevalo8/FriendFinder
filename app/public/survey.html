@@ -154,7 +154,7 @@
                     </select>
                     <br>
                     <br>
-                    <button class="btn btn-warning btn-block btn-lg home-link" type="submit" id="submitSurvey">Submit</button>
+                    <button class="btn btn-warning btn-block btn-lg home-link" type="submit" id="submitForm">Submit</button>
                 </div>
             </div>
         </div>
@@ -177,8 +177,7 @@
         <div class="modal fade" role="dialog" tabindex="-1" id="required">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <!-- <div class="modal-header">
-</div> -->
+
                     <div class="modal-body">
                         <p class="text-center">Please complete the required fields</p>
                     </div>
@@ -191,26 +190,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript">
-        $('#submitSurvey').on("click", function() {
+        $('#submitForm').on("click", function() {
             if ($('#name').val() === '' || $('#photo').val() === '') {
                 $("#required").modal('toggle');
             } else {
-                // create new object from user input
+                
                 var userData = {
                         name: $("#name").val(),
                         photo: $("#photo").val(),
                         scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
                     }
-                    // pull the origin of where user is right now
+                   
                 var currentURL = window.location.origin;
-                // AJAX post the data to the friends API.
                 $.post(currentURL + "/api/new-wdfriends", userData, function(data) {
-                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                     $("#modalHeader").text("Your new best friend is " + data.name + "!");
                     $('#modalImg').attr("src", data.photo);
-                    // Show the modal with the best match
                     $("#resultsModal").modal('toggle');
-                    // reset survey values
                     $("#name").val("");
                     $("#photo").val("");
                     $('#question1').prop('selectedIndex', 0);
@@ -227,7 +222,8 @@
             }
         });
         </script>
-        <footer class="navbar-fixed-bottom text-center">
+        <footer class="text-center">
+             <p class="text-muted">Copyright &copy; 2017 Saul Arevalo</p>
         </footer>
     </div>
 </body>
